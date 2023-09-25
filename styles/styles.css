@@ -12,24 +12,62 @@ Table of Contents:
     1. Global Styles
 ////////////////////////*/
 
+:root {
+    --main-bg-color-1: #F26D40;
+    --main-bg-color-2: #F69051;
+    --main-bg-color-3: #F9C48B;
+    --main-text-color: #260803;
+    --main-text-bg-color: #FDEFEC;
+}
+
 body {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
+    background-color: var(--main-bg-color-3);
+    font-size: 12px;
 }
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+h1 {
+    font-size: 2em;
+}
 
+p {
+    font-size: 1em;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
 
+section {
+    background-color: var(--main-text-bg-color);
+    border-radius: 0.5em;
+    padding: 1em 2em;
+    margin: 2em 1em;
+}
 
-
+img {
+    width: 100%;
+}
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--main-bg-color-2);
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-color: var(--main-bg-color-1);
+        font-size: 16px;
+    }
+}
